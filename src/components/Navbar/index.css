@@ -1,0 +1,64 @@
+.navbar {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.karo-abhayaas-logo {
+  font-family: Roboto Mono;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0px;
+  color: #000000;
+}
+
+@media screen and (min-width: 828px) {
+  .karo-abhayaas-logo {
+    margin-left: 16px;
+  }
+}
+
+.navbar-routes {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-route-icon {
+  margin-right: 16px;
+}
+
+@media screen and (min-width: 828px) {
+  .navbar-route-icon {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 828px) {
+  .mobile-menu-icon {
+    display: none;
+  }
+}
+
+.mobile-menu-popup {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(232, 226, 218);
+  list-style-type: none;
+  padding: 36px;
+}
+
+.close-menu-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-desktop-routes {
+  display: none;
+}
+
+@media screen and (min-width: 828px) {
+  .navbar-desktop-routes {
+    display: flex;
+  }
+}

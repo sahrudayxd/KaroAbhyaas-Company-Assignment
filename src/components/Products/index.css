@@ -1,0 +1,27 @@
+.products-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  padding: 0px 4%;
+}
+
+.search-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: #f6f6f6;
+  padding: 12px;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  font-family: Roboto Mono;
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 12px;
+  margin-bottom: 2px;
+}

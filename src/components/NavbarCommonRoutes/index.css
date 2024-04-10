@@ -1,0 +1,58 @@
+.route {
+  padding: 16px;
+}
+
+@media screen and (min-width: 828px) {
+  .route {
+    margin-left: 12px;
+  }
+}
+
+.route-name {
+  font-family: Roboto Mono;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+@media screen and (min-width: 828px) {
+  .route-name {
+    font-size: 18px;
+  }
+}
+
+.active-route-name {
+  font-family: Roboto Mono;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+}
+
+@media screen and (min-width: 828px) {
+  .active-route-name {
+    font-size: 16px;
+  }
+}
+
+.join-us {
+  background-color: #000000;
+  font-family: Roboto Mono;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  padding: 12px 16px 16px 16px;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 828px) {
+  .join-us {
+    font-size: 16px;
+    padding: 8px 20px 10px 20px;
+  }
+}
+
+@media screen and (min-width: 828px) {
+  .join-us-link {
+    order: -1;
+  }
+}
