@@ -55,19 +55,21 @@ const Cart = () => (
           {showEmptyView ? (
             <EmptyCartView />
           ) : (
-            <div className="cart-container">
-              <div className="cart-header-container">
-                <h1 className="total-title">Total: ₹{totalAmount}</h1>
-                {renderCheckoutPopup()}
+            <div className="cart">
+              <div className="cart-width-container">
+                <div className="cart-header-container">
+                  <h1 className="total-amount">TOTAL: ₹{totalAmount}</h1>
+                  {renderCheckoutPopup()}
+                </div>
+                <ul className="cart-items">
+                  {cartItems.map((cartItemDetails) => (
+                    <CartItem
+                      key={cartItemDetails.name}
+                      cartItemDetails={cartItemDetails}
+                    />
+                  ))}
+                </ul>
               </div>
-              <ul>
-                {cartItems.map((cartItemDetails) => (
-                  <CartItem
-                    key={cartItemDetails.name}
-                    cartItemDetails={cartItemDetails}
-                  />
-                ))}
-              </ul>
             </div>
           )}
         </CommonLayout>

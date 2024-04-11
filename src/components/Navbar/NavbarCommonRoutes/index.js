@@ -43,7 +43,7 @@ const NavbarCommonRoutes = (props) => {
       {authId === undefined && path !== "/signup" && (
         <li className="route join-us-link">
           <Link to="/signup">
-            <span className="nav-sign-up">SIGN UP</span>
+            <button className="nav-sign-up">SIGN UP</button>
           </Link>
         </li>
       )}

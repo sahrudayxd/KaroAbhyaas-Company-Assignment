@@ -1,8 +1,10 @@
 .cart-product {
+  border: 2px solid #cecece;
+  padding: 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px;
+  margin-bottom: 24px;
 }
 
 .cart-product-details {
@@ -11,14 +13,14 @@
 
 .cart-product-name {
   font-family: Roboto Mono;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 700;
   margin: 0px;
 }
 
 .cart-product-price {
   font-family: Roboto Mono;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   margin-bottom: 0px;
 }
@@ -30,16 +32,19 @@
 .delete-product {
   background-color: #000000;
   font-family: Roboto Mono;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: #fff;
-  padding: 12px 16px 16px 16px;
-  border-radius: 8px;
-  align-self: flex-end;
+  height: 36px;
+  width: 80px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-left: 12px;
 }
 
 .delete-product-popup {
   background-color: #00000060;
+  backdrop-filter: blur(10px);
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -48,8 +53,11 @@
 }
 
 .delete-warning-container {
+  width: 100%;
+  max-width: 340px;
   background-color: #fff;
   padding: 24px;
+  border-radius: 12px;
 }
 
 .delete-warning-msg {
@@ -72,8 +80,9 @@
   font-size: 16px;
   font-weight: 400;
   color: #fff;
-  padding: 8px 36px;
-  border-radius: 8px;
+  height: 36px;
+  width: 140px;
+  border-radius: 4px;
   align-self: flex-end;
   margin: 6px;
 }

@@ -54,18 +54,15 @@ const CartItem = (props) => {
   const { cartItemDetails } = props;
   const { name, price } = cartItemDetails;
   return (
-    <>
-      <hr />
-      <li className="cart-product">
-        <div className="cart-product-details">
-          <h1 className="cart-product-name">{name}</h1>
-          <p className="cart-product-price">
-            Price : <span className="cart-product-price-span">{price}</span>
-          </p>
-        </div>
-        {renderDeleteProductView(name)}
-      </li>
-    </>
+    <li className="cart-product">
+      <div className="cart-product-details">
+        <h1 className="cart-product-name">{name}</h1>
+        <p className="cart-product-price">
+          PRICE : ₹<span className="cart-product-price-span">{price}</span>
+        </p>
+      </div>
+      {renderDeleteProductView(name)}
+    </li>
   );
 };
 
