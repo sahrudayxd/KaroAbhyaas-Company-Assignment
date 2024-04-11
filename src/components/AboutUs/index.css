@@ -5,3 +5,54 @@
   font-weight: 700;
   margin-top: 46px;
 }
+
+.about-section {
+  padding: 4%;
+}
+
+.about-section-details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-section-details {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+}
+
+.about-section-image {
+  width: 100%;
+  max-width: 450px;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .about-section-image {
+    max-width: 46%;
+    margin-right: 24px;
+  }
+}
+
+.about-section-title {
+  font-family: Roboto Mono;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.about-section-description {
+  font-family: Roboto Mono;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+@media screen and (min-width: 768px) {
+  .order-1 {
+    order: -1;
+    margin-right: 24px;
+  }
+}

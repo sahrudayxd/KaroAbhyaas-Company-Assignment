@@ -47,7 +47,7 @@ This is a brief overview of the routes in our React application.
 - Component: `Home`
 - Description: The landing page of our application.
 
-### About Us (Not Added yet - WORK IN PROGRESS)
+### About Us
 
 - Route: `/about`
 - Component: `AboutUs`
@@ -73,7 +73,7 @@ This is a brief overview of the routes in our React application.
 - Component: `Products`
 - Description: Displays products available for purchase. Accessible only to logged-in users.
 
-### Account (Not Added yet - WORK IN PROGRESS)
+### Account
 
 - Route: `/account`
 - Component: `Account`
