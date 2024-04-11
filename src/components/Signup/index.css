@@ -1,0 +1,91 @@
+.signup-container {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 36px 0px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 360px;
+  padding: 24px;
+}
+
+.signup-input {
+  width: 100%;
+  border: 1px solid #6e6d6d;
+  font-family: Roboto Mono;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+}
+
+.phonenumber-get-otp {
+  display: flex;
+}
+
+.signup-button {
+  background-color: #000000;
+  font-family: Roboto Mono;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 6px;
+  align-self: center;
+  margin: 6px;
+  height: 48px;
+  width: 100px;
+}
+
+.send-otp-button {
+  background-color: #000000;
+  font-family: Roboto Mono;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 6px;
+  margin-left: 12px;
+  height: 54px;
+  width: 150px;
+  border: 1px solid #6e6d6d;
+}
+
+.error-msg {
+  font-family: Roboto Mono;
+  font-size: 16px;
+  font-weight: 700;
+  color: #b02222;
+}
+
+.otp-failure-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.signup-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-footer-msg,
+.otp-failure-msg {
+  font-family: Roboto Mono;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.redirect-login,
+.resend-otp {
+  font-family: Roboto Mono;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1d7ae7;
+  margin-left: 12px;
+}

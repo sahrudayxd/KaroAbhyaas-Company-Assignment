@@ -4,7 +4,7 @@ import { IoSearch } from "react-icons/io5";
 
 import "./index.css";
 import CommonLayout from "../CommonLayout";
-import ProductItem from "../ProductItem";
+import ProductItem from "./ProductItem";
 
 class Products extends Component {
   state = { searchInput: "" };

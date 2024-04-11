@@ -55,7 +55,8 @@
   margin-bottom: 10px;
 }
 
-.add-to-cart-button {
+.add-to-cart-button,
+.remove-from-cart-button {
   background-color: #000000;
   font-family: Roboto Mono;
   font-size: 16px;

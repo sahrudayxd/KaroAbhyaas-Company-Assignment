@@ -1,10 +1,14 @@
 import { withRouter, Link } from "react-router-dom";
+import Cookies from "js-cookie";
 
 import "./index.css";
 
 const NavbarCommonRoutes = (props) => {
   const { match } = props;
   const { path } = match;
+
+  const authId = Cookies.get("karo_abhyaas_id");
+
   return (
     <>
       <li className="route">
@@ -28,21 +32,21 @@ const NavbarCommonRoutes = (props) => {
         </Link>
       </li>
       <li className="route">
-        <Link to="/about-us">
+        <Link to="/about">
           <span
-            className={
-              path === "/about-us" ? "active-route-name" : "route-name"
-            }
+            className={path === "/about" ? "active-route-name" : "route-name"}
           >
             About Us
           </span>
         </Link>
       </li>
-      <li className="route join-us-link">
-        <Link to="/signup">
-          <span className="join-us">JOIN US</span>
-        </Link>
-      </li>
+      {authId === undefined && (
+        <li className="route join-us-link">
+          <Link to="/signup">
+            <span className="nav-sign-up">SIGN UP</span>
+          </Link>
+        </li>
+      )}
     </>
   );
 };

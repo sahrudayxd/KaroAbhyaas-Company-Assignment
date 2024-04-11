@@ -6,7 +6,7 @@ import { IoMenu, IoCloseSharp } from "react-icons/io5";
 import { FaUser, FaShoppingCart } from "react-icons/fa";
 
 import "./index.css";
-import NavbarCommonRoutes from "../NavbarCommonRoutes";
+import NavbarCommonRoutes from "./NavbarCommonRoutes";
 
 class Navbar extends Component {
   renderMobilePopupMenu = () => (
