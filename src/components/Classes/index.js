@@ -4,9 +4,9 @@ import CommonLayout from "../CommonLayout";
 const Classes = () => {
   return (
     <CommonLayout>
-      <div className="classes-container">
-        <ul>
-          {dummyClasses.map((classDetails) => (
+      <div className="classes-section">
+        <ul className="classes">
+          {dummyNeetClasses.map((classDetails) => (
             <li className="class-item" key={classDetails.name}>
               <img
                 src="https://via.placeholder.com/420x260"
@@ -16,7 +16,7 @@ const Classes = () => {
               <div className="class-details">
                 <h1 className="class-name">{classDetails.name}</h1>
                 <p className="class-description">{classDetails.description}</p>
-                <button className="practice-button">Practice</button>
+                <button className="practice-button">PRACTICE</button>
               </div>
             </li>
           ))}
@@ -28,90 +28,55 @@ const Classes = () => {
 
 export default Classes;
 
-const dummyClasses = [
+const dummyNeetClasses = [
   {
-    name: "Creative Writing Workshop",
+    name: "Biology Essentials for NEET",
     description:
-      "Unleash your creativity and express yourself through the art of creative writing with this hands-on workshop. Whether you're a seasoned writer or new to the craft, this workshop will help you develop your writing skills and explore different genres and styles. You'll learn techniques for generating ideas, crafting compelling characters, building immersive worlds, and structuring engaging narratives. Through writing exercises, prompts, and peer feedback, you'll hone your storytelling abilities and unleash your unique voice. Whether you dream of writing novels, short stories, poetry, or screenplays, this workshop will inspire and empower you to pursue your creative aspirations. Enroll now and embark on your writing journey!",
+      "Master the essential concepts of biology required to crack the NEET exam with this comprehensive class. Covering topics such as cell biology, genetics, ecology, and human physiology, this class will provide you with a solid foundation in biological sciences. Whether you're a beginner or looking to strengthen your knowledge, this class will equip you with the skills and confidence to excel in the NEET exam and pursue a career in the medical field.",
   },
   {
-    name: "Data Science and Machine Learning Bootcamp",
+    name: "Chemistry Fundamentals for NEET",
     description:
-      "In this bootcamp, you'll learn the essential concepts and techniques of data science and machine learning from scratch. With the exponential growth of data in today's world, there's a high demand for professionals who can analyze and derive insights from it. This class will teach you how to clean, analyze, and visualize data using Python libraries like NumPy, Pandas, and Matplotlib. You'll also delve into machine learning algorithms such as linear regression, logistic regression, decision trees, and neural networks. Through hands-on projects and case studies, you'll gain practical experience and be ready to tackle real-world data science problems. Whether you're a beginner or looking to enhance your skills, this bootcamp is your gateway to a rewarding career in data science and machine learning.",
+      "Gain a deep understanding of the fundamental principles of chemistry required for success in the NEET exam with this comprehensive class. Covering topics such as atomic structure, chemical bonding, organic chemistry, and chemical kinetics, this class will provide you with the knowledge and confidence to achieve your goals.",
   },
   {
-    name: "Mobile App Development with React Native",
+    name: "Physics Basics for NEET",
     description:
-      "Build cross-platform mobile apps with React Native, the popular framework for developing native-like applications using JavaScript and React. In this class, you'll learn how to create mobile apps that run on both iOS and Android devices with a single codebase. You'll explore React Native's component-based architecture, UI elements, navigation, state management, and integration with backend services. Whether you're a web developer looking to expand into mobile development or an aspiring app developer, this class will provide you with the skills and knowledge needed to build high-quality mobile apps efficiently. Enroll now and start building your own mobile apps with React Native!",
+      "Build a strong foundation in physics and tackle challenging problems with confidence in the NEET exam with this introductory class. Covering topics such as mechanics, thermodynamics, electricity, and magnetism, this class will prepare you for success in the NEET exam and beyond.",
   },
   {
-    name: "Digital Marketing Mastery",
+    name: "NEET Biology Masterclass",
     description:
-      "Master the art of digital marketing and take your online presence to new heights. In today's digital age, effective marketing strategies are crucial for businesses to succeed. This class covers a wide range of topics including search engine optimization (SEO), social media marketing, email marketing, content marketing, and analytics. You'll learn how to create compelling content, engage with your audience on various platforms, and analyze data to measure your marketing efforts' effectiveness. Whether you're a business owner, marketer, or aspiring digital marketer, this class will equip you with the skills and strategies needed to thrive in the competitive digital landscape. Enroll now and become a digital marketing expert!",
+      "Dive deep into the world of biology with this comprehensive masterclass designed specifically for NEET aspirants. From molecular biology and genetics to ecology and human physiology, this class covers all the essential topics you need to know to ace the NEET exam. Whether you're a beginner or looking to reinforce your knowledge, this class will provide you with the skills and confidence to succeed.",
   },
   {
-    name: "Complete Web Development Bootcamp",
+    name: "Chemistry Mastery for NEET",
     description:
-      "This comprehensive web development class covers everything you need to know to become a full-stack web developer. Starting with the basics of HTML, CSS, and JavaScript, you'll progress to advanced topics like responsive web design, backend development with Node.js, database management with MongoDB, and deployment using platforms like Heroku. With over 40 hours of video content, practical exercises, and real-world projects, this bootcamp will equip you with the skills necessary to build professional-quality websites and web applications. Whether you're a complete beginner or looking to level up your skills, this class has something for everyone. Join now and kickstart your journey into the world of web development!",
+      "Take your chemistry skills to the next level with this advanced mastery class tailored for NEET preparation. Covering topics such as chemical equilibrium, coordination compounds, and organic reactions, this class will help you tackle even the most challenging questions in the NEET exam. Whether you're aiming for a top score or simply want to strengthen your chemistry fundamentals, this class is your key to success.",
   },
   {
-    name: "Python Programming Masterclass",
+    name: "NEET Physics Pro",
     description:
-      "Become a proficient Python programmer with this comprehensive masterclass. Python is one of the most popular programming languages globally, known for its simplicity and versatility. In this class, you'll start with the basics of Python syntax and programming concepts before diving into more advanced topics like object-oriented programming, data structures, and algorithm design. You'll also learn how to work with libraries such as NumPy, Pandas, and Matplotlib for data analysis and visualization. Whether you're interested in web development, data science, or automation, Python is a must-know language, and this masterclass will help you master it. Enroll now and take your Python skills to the next level!",
+      "Become a physics pro and conquer the NEET exam with this intensive preparation class. From mechanics and optics to modern physics and electromagnetism, this class covers all the essential topics you need to know to excel in physics. With rigorous practice sessions and problem-solving exercises, you'll sharpen your skills and build the confidence to tackle any physics question in the NEET exam.",
   },
   {
-    name: "Java Programming Fundamentals",
+    name: "NEET Biology Bootcamp",
     description:
-      "Learn the fundamentals of Java programming language with this comprehensive class. Java is a versatile and widely-used programming language known for its portability and performance. In this class, you'll start with the basics of Java syntax, data types, and control structures before moving on to more advanced topics like object-oriented programming, exception handling, and multithreading. You'll also learn how to work with Java's standard libraries and develop practical applications. Whether you're new to programming or looking to expand your skills, this class will provide you with a solid foundation in Java programming. Enroll now and embark on your journey to becoming a Java developer!",
+      "Gear up for the NEET exam with this intensive biology bootcamp designed to boost your knowledge and skills. Covering topics such as plant physiology, animal diversity, and biotechnology, this bootcamp will provide you with a comprehensive review of biology concepts tested in the NEET exam. Whether you're a novice or an experienced learner, this bootcamp will help you ace the biology section of the NEET exam.",
   },
   {
-    name: "Blockchain and Cryptocurrency Essentials",
+    name: "Chemistry Crash Course for NEET",
     description:
-      "Discover the revolutionary technology behind blockchain and cryptocurrencies in this comprehensive class. Blockchain, the underlying technology of cryptocurrencies like Bitcoin and Ethereum, has the potential to disrupt various industries, including finance, supply chain management, and healthcare. In this class, you'll learn how blockchain works, its core components, and its applications beyond cryptocurrencies. You'll also delve into the concepts of smart contracts, decentralized applications (DApps), and consensus mechanisms. Whether you're an entrepreneur, developer, or simply curious about blockchain technology, this class will provide you with a solid understanding of its principles and potential. Enroll now and join the blockchain revolution!",
+      "Get ready for the NEET exam in record time with this fast-paced chemistry crash course. Covering all the essential topics in chemistry, from atomic structure to chemical kinetics, this course will help you review key concepts and solve practice problems efficiently. Whether you're short on time or looking for a quick refresher, this crash course will prepare you for success in the NEET chemistry section.",
   },
   {
-    name: "Artificial Intelligence and Deep Learning",
+    name: "NEET Physics Refresher",
     description:
-      "Dive into the fascinating world of artificial intelligence (AI) and deep learning with this comprehensive class. AI is transforming industries and shaping the future, with applications ranging from virtual assistants to self-driving cars. In this class, you'll learn the fundamentals of AI, including machine learning algorithms, neural networks, and deep learning frameworks like TensorFlow and Keras. You'll also explore advanced topics such as convolutional neural networks (CNNs), recurrent neural networks (RNNs), and generative adversarial networks (GANs). Whether you're a student, professional, or enthusiast, this class will provide you with the knowledge and skills needed to excel in the field of artificial intelligence. Enroll now and unlock the potential of AI!",
+      "Refresh your physics knowledge and prepare for the NEET exam with this comprehensive refresher course. Covering topics such as motion, thermodynamics, and electromagnetism, this course will help you review fundamental physics concepts and sharpen your problem-solving skills. Whether you're looking to reinforce your knowledge or brush up on specific topics, this refresher course will help you achieve your goals.",
   },
   {
-    name: "Cybersecurity Fundamentals",
+    name: "NEET Chemistry Review",
     description:
-      "Protect yourself and your organization from cyber threats with this comprehensive cybersecurity class. With the increasing digitization of society, cybersecurity has become more critical than ever. In this class, you'll learn about common cyber threats, such as malware, phishing, and denial-of-service (DoS) attacks, and how to defend against them. You'll also explore topics like cryptography, network security, ethical hacking, and security best practices. Whether you're an IT professional, business owner, or simply concerned about your online security, this class will provide you with the knowledge and skills needed to navigate the complex world of cybersecurity. Enroll now and safeguard your digital assets!",
-  },
-  {
-    name: "Photography Masterclass",
-    description:
-      "Unlock your creativity and master the art of photography with this comprehensive masterclass. Photography is more than just pointing and shooting—it's about capturing moments, telling stories, and evoking emotions. In this class, you'll learn the fundamentals of photography, including composition, lighting, exposure, and camera settings. You'll also explore different genres of photography, such as landscape, portrait, street, and wildlife photography, and how to develop your unique style. Whether you're a beginner or an experienced photographer looking to hone your skills, this class will inspire and empower you to take your photography to the next level. Enroll now and start capturing unforgettable images!",
-  },
-  {
-    name: "UI/UX Design Essentials",
-    description:
-      "Learn the essentials of UI/UX design and create engaging user experiences for digital products. In today's competitive market, user experience (UX) design plays a crucial role in the success of websites, mobile apps, and other digital products. In this class, you'll learn the principles of user-centered design, wireframing, prototyping, and usability testing. You'll also explore design tools like Adobe XD and Figma and best practices for designing intuitive and visually appealing interfaces. Whether you're a designer, developer, or product manager, this class will equip you with the skills and knowledge needed to create user-friendly and impactful digital experiences. Enroll now and become a UI/UX design expert!",
-  },
-  {
-    name: "Music Production Basics",
-    description:
-      "Unlock your creativity and produce your own music with this introductory class in music production. Whether you're a musician, aspiring producer, or simply passionate about music, this class will teach you the fundamentals of music production using digital audio workstations (DAWs) like Ableton Live and Logic Pro X. You'll learn about MIDI sequencing, audio recording, editing, mixing, and mastering techniques. You'll also explore different genres and styles of music production, from electronic dance music (EDM) to hip-hop and rock. With hands-on exercises and projects, you'll gain practical experience and be ready to start creating your own tracks. Enroll now and unleash your musical potential!",
-  },
-  {
-    name: "English Language Mastery",
-    description:
-      "Improve your English language skills and unlock new opportunities with this comprehensive mastery class. Whether you're a non-native speaker looking to enhance your English proficiency or a native speaker seeking to refine your language skills, this class covers all aspects of the English language, including grammar, vocabulary, pronunciation, and communication skills. You'll learn practical strategies for effective reading, writing, listening, and speaking in English, both in everyday situations and professional contexts. With interactive lessons, quizzes, and exercises, you'll progress from beginner to advanced levels and gain confidence in your ability to communicate fluently in English. Enroll now and take your English skills to the next level!",
-  },
-  {
-    name: "Financial Literacy and Investment Strategies",
-    description:
-      "Gain essential financial knowledge and learn investment strategies to secure your financial future. In today's complex financial landscape, understanding basic financial concepts and making informed investment decisions are crucial for building wealth and achieving financial independence. This class covers a wide range of topics including budgeting, saving, investing, retirement planning, and risk management. You'll learn how to analyze financial statements, evaluate investment opportunities, and create a personalized financial plan based on your goals and risk tolerance. Whether you're a beginner or an experienced investor, this class will provide you with the knowledge and tools needed to make smart financial decisions and build a solid financial foundation. Enroll now and take control of your financial future!",
-  },
-  {
-    name: "Cooking Essentials: From Beginner to Chef",
-    description:
-      "Master the art of cooking with this comprehensive class designed for beginners and aspiring chefs. Whether you're a novice in the kitchen or looking to enhance your culinary skills, this class covers everything you need to know to cook delicious and impressive meals. You'll learn basic cooking techniques, knife skills, ingredient preparation, and cooking methods for various cuisines and dishes. From soups and salads to mains and desserts, you'll explore a wide range of recipes and culinary traditions. With step-by-step instructions, tips, and tricks from experienced chefs, you'll gain the confidence and expertise to create restaurant-quality meals at home. Enroll now and embark on your culinary journey!",
-  },
-  {
-    name: "Yoga and Meditation for Mind-Body Wellness",
-    description:
-      "Achieve holistic wellness and inner peace with this transformative class in yoga and meditation. Yoga is more than just physical exercise—it's a spiritual practice that promotes balance, flexibility, and mindfulness. In this class, you'll learn yoga poses (asanas), breathing techniques (pranayama), and meditation practices to calm the mind, reduce stress, and enhance overall well-being. Whether you're a beginner or an experienced practitioner, this class offers something for everyone, from gentle yoga flows to guided meditations. With regular practice, you'll experience improved strength, flexibility, and mental clarity, leading to a healthier and happier life. Enroll now and start your journey towards mind-body wellness!",
+      "Review essential chemistry concepts and enhance your preparation for the NEET exam with this comprehensive review course. Covering topics such as chemical bonding, organic chemistry, and coordination compounds, this course will help you identify strengths and weaknesses in your chemistry knowledge and focus your study efforts effectively. Whether you're aiming for a top score or looking to improve your performance, this review course will set you on the path to success.",
   },
 ];

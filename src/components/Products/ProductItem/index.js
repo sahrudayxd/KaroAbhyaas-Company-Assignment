@@ -29,20 +29,20 @@ const ProductItem = (props) => {
               <h1 className="product-name">{name}</h1>
               <p className="product-description">{description}</p>
               <div>
-                <p className="product-price">₹{price}</p>
+                <p className="product-price">PRICE: ₹{price}</p>
                 {isProductICart ? (
                   <button
                     className="remove-from-cart-button"
                     onClick={onClickRemoveFromCart}
                   >
-                    Remove From Cart
+                    REMOVE FROM CART
                   </button>
                 ) : (
                   <button
                     className="add-to-cart-button"
                     onClick={onClickAddToCart}
                   >
-                    Add To Cart
+                    ADD TO CART
                   </button>
                 )}
               </div>
